@@ -1,0 +1,5 @@
+steps:
+  - name: Hello World
+    command: echo "Get started with probo checks!"
+  - name: Hello Again
+    command: echo "Probo checks completed!"
