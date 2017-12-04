@@ -1,0 +1,27 @@
+default:
+  suites:
+    default:
+      contexts:
+        - Drupal\DrupalExtension\Context\MinkContext
+  formatters:
+    pretty: true
+    html:
+      output_path: %paths.base%/build/html
+  extensions:
+    Behat\MinkExtension:
+      goutte:
+        guzzle_parameters:
+            verify: false
+            curl.options:
+                  CURLOPT_SSL_VERIFYPEER: false
+                  CURLOPT_CERTINFO: false
+                  CURLOPT_TIMEOUT: 120
+            ssl.certificate_authority: false
+      base_url: https://sites.google.com/
+    emuse\BehatHTMLFormatter\BehatHTMLFormatterExtension:
+      name: html
+      renderer: Twig,Behat2
+      file_name: Report
+      print_args: true
+      print_outp: true
+      loop_break: true
