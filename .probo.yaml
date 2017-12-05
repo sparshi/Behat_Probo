@@ -1,10 +1,13 @@
 steps:
   - name: Hello World
     command: 'echo "Get started with probo checks!"'
+  #
+  # - name: Hello Again
+  #   command:
+  #     pwd; ls -al; pwd; cd ../; pwd; ls -al;
 
-  - name: Hello Again
-    command:
-      pwd; ls -al; pwd; cd ../; pwd; ls -al;
+  -name: Run behat tests
+    command: 'cd Behat_Probo ; composer install ; bin/behat'
 
   # - name: Echo pwd
   #   plugin: Script
