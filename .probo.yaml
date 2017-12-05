@@ -6,8 +6,14 @@ steps:
   #   command:
   #     pwd; ls -al; pwd; cd ../; pwd; ls -al;
 
-  -name: Run behat tests
-    command: 'cd Behat_Probo ; composer install ; bin/behat'
+  - name: Run behat tests
+    plugin: Shell
+    command: 'composer install ; ../bin/behat'
+
+  - name: Behat tests
+    plugin: Script
+    script: |
+       cd $SRC_DIR/Behat_Probo/ ./bin/behat
 
   # - name: Echo pwd
   #   plugin: Script
