@@ -4,8 +4,8 @@ steps:
 
   - name: Hello Again
     command:
-      cd;
-      pwd;
+      ls -al
+      cd ../
       ls -al
 
   # - name: Echo pwd
