@@ -5,7 +5,8 @@ steps:
   - name: Hello Again
     command:
       cd;
-      pwd
+      pwd;
+      ls -al
 
   # - name: Echo pwd
   #   plugin: Script
