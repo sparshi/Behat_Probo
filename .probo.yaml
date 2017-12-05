@@ -4,12 +4,12 @@ steps:
 
   - name: Hello Again
     command:
-      cd /src/tests ; pwd
+      cd /src/Behat_Probo ; pwd
 
   - name: Echo pwd
     plugin: Script
     script: |
-      cd /src/tests
+      cd /src/Behat_Probo
       pwd
 
 
