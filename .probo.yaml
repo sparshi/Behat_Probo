@@ -13,8 +13,7 @@ steps:
   - name: Behat tests
     plugin: Script
     script: |
-       cd $SRC_DIR/Behat_Probo/;
-      ./bin/behat
+       cd $SRC_DIR/Behat_Probo/ ./bin/behat
 
   # - name: Echo pwd
   #   plugin: Script
