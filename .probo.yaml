@@ -4,9 +4,7 @@ steps:
 
   - name: Hello Again
     command:
-      ls -al;
-      cd ../;
-      ls -al
+      pwd; ls -al; pwd; cd ../; pwd; ls -al;
 
   # - name: Echo pwd
   #   plugin: Script
