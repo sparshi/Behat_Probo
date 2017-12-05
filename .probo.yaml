@@ -1,17 +1,13 @@
 steps:
   - name: Hello World
-    command: echo "Get started with probo checks!"
+    command: 'echo "Get started with probo checks!"'
 
   - name: Hello Again
-    command: echo "Probo checks completed!"
+    command: 'echo "Probo checks completed!"'
 
-  # - name: Wraith tests
-  #   plugin: Script
-  #   script: |
-  #       chmod +x $SRC_DIR/resources/testing/wraith/probo_wraith.sh
-  #       $SRC_DIR/resources/testing/wraith/probo_wraith.sh
+  # - name: Behat tests
+  #   command: 'cd Behat_Probo ; ./vendor/bin/behat'
 
-  - name: Behat tests
-    plugin: Script
-    script: |
-           cd $SRC_DIR bin/behat
+  - name: Run behat tests
+    plugin: Shell
+    command: ‘cd Behat_Probo ; composer install ; bin/behat’
