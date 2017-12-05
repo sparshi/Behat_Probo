@@ -10,4 +10,4 @@ steps:
 
   - name: Run behat tests
     plugin: Shell
-    command: ‘cd Behat_Probo ; composer install ; ./bin/behat’
+    command: composer install ; ./bin/behat
