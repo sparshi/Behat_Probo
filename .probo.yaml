@@ -3,7 +3,7 @@ steps:
     command: 'echo "Get started with probo checks!"'
 
   - name: Hello Again
-    command: 'pwd'
+    command: 'cd Behat_Probo ; pwd'
 
   # - name: Behat tests
   #   command: 'cd Behat_Probo ; ./vendor/bin/behat'
