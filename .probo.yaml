@@ -4,13 +4,14 @@ steps:
 
   - name: Hello Again
     command:
-      cd /Behat_Probo/features ; pwd
-
-  - name: Echo pwd
-    plugin: Script
-    script: |
-      cd /Behat_Probo/features
+      cd;
       pwd
+
+  # - name: Echo pwd
+  #   plugin: Script
+  #   script: |
+  #     cd /Behat_Probo/features
+  #     pwd
 
 
   # - name: Behat tests
