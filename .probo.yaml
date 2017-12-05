@@ -3,11 +3,19 @@ steps:
     command: 'echo "Get started with probo checks!"'
 
   - name: Hello Again
-    command: 'cd Behat_Probo ; pwd'
+    command:
+      cd /src/tests ; pwd
+
+  - name: Echo pwd
+    plugin: Script
+    script: |
+      cd /src/tests
+      pwd
+
 
   # - name: Behat tests
   #   command: 'cd Behat_Probo ; ./vendor/bin/behat'
 
-  - name: Run behat tests
-    plugin: Shell
-    command: 'composer install ; ./bin/behat'
+  # - name: Run behat tests
+  #   plugin: Shell
+  #   command: 'composer install ; ./bin/behat'
