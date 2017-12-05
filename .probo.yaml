@@ -8,12 +8,12 @@ steps:
 
   - name: Run behat tests
     plugin: Shell
-    command: 'cd Behat_Probo ; composer install ; bin/behat'
+    command: 'cd Behat_Probo ; composer install ; ../bin/behat'
 
   - name: Behat tests
     plugin: Script
     script: |
-       cd $SRC_DIR/Behat_Probo/features ./bin/behat
+       cd $SRC_DIR/Behat_Probo/features ../bin/behat
 
   # - name: Echo pwd
   #   plugin: Script
