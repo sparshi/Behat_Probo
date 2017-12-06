@@ -7,7 +7,7 @@ steps:
   # #     pwd; ls -al; pwd; cd ../; pwd; ls -al;
   - name: Run behat tests
     plugin: Shell
-    command:  'cd usr ; pwd ; ls -al'
+    command:  'cd usr/src ; pwd ; ls -al'
 
   # - name: Behat tests
   #   plugin: Script
