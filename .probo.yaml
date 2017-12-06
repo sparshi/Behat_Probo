@@ -12,6 +12,7 @@ steps:
     - name: Behat tests
       plugin: Script
       script: |
+      ls -al;
        cd $SRC_DIR/Behat_Probo && ./behat.sh
   #
   # - name: Behat tests
