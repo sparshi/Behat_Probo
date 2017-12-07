@@ -1,1 +1,1 @@
-/bin/behat
+bin/behat
