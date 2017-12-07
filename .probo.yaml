@@ -5,14 +5,14 @@ steps:
   # # - name: Hello Again
   # #   command:
   # #     pwd; ls -al; pwd; cd ../; pwd; ls -al;
-  - name: Run behat tests
-    plugin: Shell
-    command:  'cd usr/src ; pwd ; ls -al'
+  # - name: Run behat tests
+  #   plugin: Shell
+  #   command:  'cd usr/src ; pwd ; ls -al'
 
-  # - name: Behat tests
-  #   plugin: Script
-  #   script: |
-  #      cd $SRC_DIR/Behat_Probo && ./behat.sh
+  - name: Behat tests
+    plugin: Script
+    script: |
+       cd $SRC_DIR/Behat_Probo && ./behat.sh
   #
   # - name: Behat tests
   #   plugin: Script
