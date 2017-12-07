@@ -6,7 +6,7 @@ steps:
   - name: Behat tests
     plugin: Script
     script: |
-      pwd ; composer install ; cd $SRC_DIR && ./probo_behat.sh ;
+      pwd ; composer install ; cd $SRC_DIR/probo_behat.sh ;
   #
   # - name: Behat tests
   #   plugin: Script
