@@ -18,10 +18,10 @@ default:
                   CURLOPT_TIMEOUT: 120
             ssl.certificate_authority: false
       base_url: https://sites.google.com/
-    # emuse\BehatHTMLFormatter\BehatHTMLFormatterExtension:
-      # name: html
-      # renderer: Twig,Behat2
-      # file_name: Report
-      # print_args: true
-      # print_outp: true
-      # loop_break: true
+    emuse\BehatHTMLFormatter\BehatHTMLFormatterExtension:
+      name: html
+      renderer: Twig,Behat2
+      file_name: Report
+      print_args: true
+      print_outp: true
+      loop_break: true
