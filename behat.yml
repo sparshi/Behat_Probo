@@ -3,10 +3,10 @@ default:
     default:
       contexts:
         - Drupal\DrupalExtension\Context\MinkContext
-  formatters:
-    pretty: true
-    html:
-      output_path: %paths.base%/build/html
+  # formatters:
+  #   pretty: true
+  #   html:
+  #     output_path: %paths.base%/build/html
   extensions:
     Behat\MinkExtension:
       goutte:
@@ -19,9 +19,9 @@ default:
             ssl.certificate_authority: false
       base_url: https://sites.google.com/
     # emuse\BehatHTMLFormatter\BehatHTMLFormatterExtension:
-      # name: html
-      # renderer: Twig,Behat2
-      # file_name: Report
-      # print_args: true
-      # print_outp: true
-      # loop_break: true
+    #   name: html
+    #   renderer: Twig,Behat2
+    #   file_name: Report
+    #   print_args: true
+    #   print_outp: true
+    #   loop_break: true
