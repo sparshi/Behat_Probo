@@ -12,4 +12,4 @@
 // 		"Commit message: ```${commit_message}```\n".
 // 		file_get_contents("slack_output__behat.txt")."\n".
 
-echo "Hello"
+echo "Hello";
