@@ -1,4 +1,4 @@
-Feature: Verifying the features of Demo1 feature file
+Feature: Verifying the features of Demo1 feature files
 
 @blackbox @1
 Scenario: Verify the links in the page
