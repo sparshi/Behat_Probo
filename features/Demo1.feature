@@ -23,10 +23,3 @@ Scenario: Verify URL redirection for Architecture & Design Consulting
 	When I follow "Architecture"
 	Then the url should match "/site/unclebobconsultingllc/home/architecture-and-design"
 	And I should see text matching "Architecture and Design"
-
-@blackbox @4
-Scenario: Verify URL redirection for Architecture & Design Consulting
-	Given I am at "/site/unclebobconsultingllc/the-truth-about-bdd"
-	When I follow "Code"
-	Then the url should match "/site/unclebobconsultingllc/home"
-	And I should see text matching "Code"
