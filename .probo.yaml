@@ -10,10 +10,13 @@ steps:
   - name: Behat tests
     plugin: Script
     script: |
-      cd $SRC_DIR ; ls -la; probo_behat.sh
+
+      chmod +x $SRC_DIR/probo_behat.sh
+      $SRC_DIR/probo_behat.sh
+  #    cd $SRC_DIR ; ls -la; probo_behat.sh
   # - name: Behat tests
   #   plugin: Script
-  #   script: 
+  #   script:
   #      cd $SRC_DIR/Behat_Probo/ ./bin/behat
 
   # - name: Echo pwd
