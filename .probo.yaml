@@ -10,7 +10,7 @@ steps:
   - name: Behat tests
     plugin: Script
     script: |
-      cd $SRC_DIR ; probo_behat.sh
+      cd $SRC_DIR ; ls -la; probo_behat.sh
   # - name: Behat tests
   #   plugin: Script
   #   script: |
