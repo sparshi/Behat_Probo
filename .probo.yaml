@@ -2,10 +2,10 @@ steps:
   # - name: Run behat tests
   #   plugin: Shell
   #   command:  'cd $SRC_DIR ; pwd ; ls -al ; composer install ; bin/behat '
-  - name: Behat tests
+  - name: Run composer
     plugin: Script
     script: |
-      cd $SRC_DIR ; pwd ; composer install ;
+      cd $SRC_DIR ; pwd ;ls-la; composer update --lock; composer install ;
 
   - name: Behat tests
     plugin: Script
