@@ -8,7 +8,14 @@ steps:
     script: |
       chmod +x $SRC_DIR/probo_behat.sh
       $SRC_DIR/probo_behat.sh
-- name: Slack report
-  plugin: Script
-  script: |
-    php $SRC_DIR/slack.php
+
+  - name: Install test dependencies
+    plugin: Script
+    script: |
+      chmod +x $SRC_DIR/build.sh
+      $SRC_DIR/build.sh
+
+  - name: Slack report
+    plugin: Script
+    script: |
+      php $SRC_DIR/slack.php
