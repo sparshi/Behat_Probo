@@ -7,6 +7,6 @@
 
 # Versions
 which ruby
-sudo apt-get install ruby-full
+apt-get -qq update
 echo "ruby > " && ruby -v
 echo "wraith > " && wraith -v
