@@ -5,10 +5,7 @@
 # apt-get install imagemagick
 # gem install wraith -v 3.2.0
 
-\curl -sSL https://get.rvm.io | bash -s stable
-rvm install ruby-2.0
-
 # Versions
-
+which ruby
 echo "ruby > " && ruby -v
 echo "wraith > " && wraith -v
