@@ -5,10 +5,11 @@
 # apt-get install imagemagick
 # gem install wraith -v 3.2.0
 
-# rvm install 2.0.0
-# apt-get -y install imagemagick
-# gem install wraith -v 3.2.0
+$ sudo apt-add-repository ppa:brightbox/ruby-ng
+$ sudo apt-get update
+$ sudo apt-get install ruby2.0
 
 # Versions
-echo "wraith > " && wraith -v
+
 echo "ruby > " && ruby -v
+echo "wraith > " && wraith -v
