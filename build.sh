@@ -10,5 +10,5 @@
 # gem install wraith -v 3.2.0
 
 # Versions
-# echo "wraith > " && wraith -v
+echo "wraith > " && wraith -v
 echo "ruby > " && ruby -v
