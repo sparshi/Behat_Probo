@@ -8,5 +8,7 @@
 # Versions
 which ruby
 apt-get -qq update
+apt-get install imagemagick
+gem install wraith -v 3.2.0
 echo "ruby > " && ruby -v
 echo "wraith > " && wraith -v
