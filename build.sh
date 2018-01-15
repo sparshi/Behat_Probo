@@ -13,6 +13,7 @@ which ruby
 apt-get libicu-dev
 apt-get install imagemagick
 apt-get rake
+
 gem install wraith -v 3.2.0
 echo "ruby > " && ruby -v
 echo "wraith > " && wraith -v
