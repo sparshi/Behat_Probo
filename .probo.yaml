@@ -15,7 +15,7 @@ steps:
       chmod +x $SRC_DIR/build.sh
       $SRC_DIR/build.sh
 
-  - name: Slack report
-    plugin: Script
-    script: |
-      php $SRC_DIR/slack.php
+  # - name: Slack report
+  #   plugin: Script
+  #   script: |
+  #     php $SRC_DIR/slack.php
