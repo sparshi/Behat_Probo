@@ -20,6 +20,10 @@
 echo "node version > " && node -v
 which node
 
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n latest
+
 # npm install npm@latest -g
 #
 #
