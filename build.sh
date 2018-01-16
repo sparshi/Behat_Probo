@@ -18,9 +18,11 @@
 # echo "ruby > " && ruby -v
 # echo "wraith > " && wraith -v
 echo "node version > " && node -v
+sudo n stable
+echo "node version > " && node -v
 
-npm -g install npm@latest-2
-
-echo "npm version > " && npm -v
-
-npm install -g the-a11y-machine
+# npm -g install npm@latest-2
+#
+# echo "npm version > " && npm -v
+#
+# npm install -g the-a11y-machine
