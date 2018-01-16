@@ -18,3 +18,4 @@
 # echo "ruby > " && ruby -v
 # echo "wraith > " && wraith -v
 node -v
+npm -v
