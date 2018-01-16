@@ -19,7 +19,7 @@
 # echo "wraith > " && wraith -v
 echo "node version > " && node -v
 
-npm -g install npm@latest
+npm -g install npm@latest-2
 
 echo "npm version > " && npm -v
 
