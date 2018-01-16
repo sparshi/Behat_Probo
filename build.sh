@@ -42,4 +42,4 @@ echo "npm version > " && npm -v
 #
 # echo "npm version > " && npm -v
 #
-npm install -g the-a11y-machine
+npm install --global a11y
