@@ -19,3 +19,4 @@
 # echo "wraith > " && wraith -v
 node -v
 npm -v
+npm install the-a11y-machine
