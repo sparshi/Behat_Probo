@@ -33,13 +33,8 @@ nvm install v6.10.3
 
 echo "node version > " && node -v
 
-#Install
-# npm install npm@latest -g
-#
-#
+#Install latest NPM
 echo "npm version > " && npm -v
-
-
 
 npm install npm@latest -g
 
