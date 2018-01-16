@@ -24,6 +24,8 @@ sudo npm cache clean -f
 sudo npm install -g n
 sudo n 6.10.3
 
+command -v nvm
+
 echo "node version > " && node -v
 
 # npm install npm@latest -g
