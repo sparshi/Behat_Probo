@@ -36,7 +36,7 @@ echo "node version > " && node -v
 #Install latest NPM
 echo "npm version > " && npm -v
 
-npm install npm@latest -g
+npm install npm@latest
 
 echo "npm version > " && npm -v
 #
