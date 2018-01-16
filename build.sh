@@ -18,11 +18,12 @@
 # echo "ruby > " && ruby -v
 # echo "wraith > " && wraith -v
 echo "node version > " && node -v
+which node
 
-npm install npm@latest -g
-
-
-echo "npm version > " && npm -v
+# npm install npm@latest -g
+#
+#
+# echo "npm version > " && npm -v
 
 # npm -g install npm@latest-2
 #
