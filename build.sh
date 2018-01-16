@@ -23,8 +23,7 @@ which node
 sudo npm cache clean -f
 sudo npm install -g n
 sudo n 6.10.3
-
-nvm use 6.10.3
+sudo n use 6.10.3
 
 
 echo "node version > " && node -v
