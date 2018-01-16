@@ -42,4 +42,4 @@ echo "npm version > " && npm -v
 #
 # echo "npm version > " && npm -v
 #
-npm install --global a11y
+npm install -g pa11y
