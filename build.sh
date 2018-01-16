@@ -39,6 +39,8 @@ echo "node version > " && node -v
 #
 echo "npm version > " && npm -v
 
+npm install -g the-a11y-machine
+
 # npm -g install npm@latest-2
 #
 # echo "npm version > " && npm -v
