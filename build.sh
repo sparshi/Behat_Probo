@@ -22,9 +22,14 @@ which node
 
 sudo npm cache clean -f
 sudo npm install -g n
-sudo n 6.10.3
-sudo n use 6.10.3
+# sudo n 6.10.3
+# sudo n use 6.10.3
 
+# Install nvm
+
+curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash
+source ~/.profile
+nvm install v6.10.3
 
 echo "node version > " && node -v
 
