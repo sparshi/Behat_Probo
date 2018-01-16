@@ -17,6 +17,7 @@
 # gem install wraith -v 3.2.0
 # echo "ruby > " && ruby -v
 # echo "wraith > " && wraith -v
-node -v
-npm -v
+echo "node version > "node -v
+echo "npm version > "npm -v
+npm -g install npm@latest
 npm install the-a11y-machine
