@@ -1,13 +1,13 @@
 steps:
-  - name: Run composer
-    plugin: Script
-    script: |
-      cd $SRC_DIR ; pwd ;ls-la; composer install ;
-  - name: Run Behat tests
-    plugin: Script
-    script: |
-      chmod +x $SRC_DIR/probo_behat.sh
-      $SRC_DIR/probo_behat.sh
+  # - name: Run composer
+  #   plugin: Script
+  #   script: |
+  #     cd $SRC_DIR ; pwd ;ls-la; composer install ;
+  # - name: Run Behat tests
+  #   plugin: Script
+  #   script: |
+  #     chmod +x $SRC_DIR/probo_behat.sh
+  #     $SRC_DIR/probo_behat.sh
 
   - name: Install test dependencies
     plugin: Script
@@ -15,7 +15,7 @@ steps:
       chmod +x $SRC_DIR/build.sh
       $SRC_DIR/build.sh
 
-  - name: Slack report
-    plugin: Script
-    script: |
-      php $SRC_DIR/slack.php
+  # - name: Slack report
+  #   plugin: Script
+  #   script: |
+  #     php $SRC_DIR/slack.php
